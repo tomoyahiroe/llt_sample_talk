@@ -22,25 +22,25 @@ marp: true
 
 # 例
 
-<img src="./screen.png" width="600" height="400">
+<img src="./images/screen.jpeg" width="600" height="400">
 
 ---
 
 ### HTML のコード例
 
-<img src="./code.png" width="600" height="400">
+<img src="./images/code.png" width="600" height="400">
 
 ---
 
 ### CSS のコード例
 
-<img src="./css.png" width="600" height="400">
+<img src="./images/css.png" width="600" height="400">
 
 ---
 
 # 例
 
-<img src="./screen.png" width="600" height="400">
+<img src="./images/screen.jpeg" width="600" height="400">
 
 ---
 
@@ -54,13 +54,13 @@ marp: true
 
 そこで、**JavaScript** と呼ばれる言語を使用します。JavaScrpt は、HTML(とそれを装飾する CSS)の要素を操作することで、アニメーション豊かな、いわゆるリッチなサイトを作成することができます。
 
-<img src="./js.png" width="600" height="400">
+<img src="./images/js.png" width="600" height="400">
 
 ---
 
 - 上のコードの例
-  <img src="./cat.png" width="900" style="border:solid">
-  <img src="./human.png" width="900" style="border:solid">
+  <img src="./images/cat.png" width="900" style="border:solid">
+  <img src="./images/human.png" width="900" style="border:solid">
 
 ---
 
@@ -81,7 +81,7 @@ marp: true
 ---
 
 - 超超超ざっくりとしたイメージ
-  <img src="./image.png" width="900">
+  <img src="./images/image.png" width="900">
 
 ---
 
