@@ -1,5 +1,7 @@
 ---
 marp: true
+pagenate: true
+theme: default
 ---
 
 # Web サイトの作り方を調べてみた
@@ -37,7 +39,7 @@ written by tomoyahiroe
 
 ### 例
 
-<img src="./images/screen.jpeg" width="600" height="400">
+<img src="./images/screen.jpeg" width="600" height="400" style="border:solid">
 
 ---
 
@@ -55,7 +57,7 @@ written by tomoyahiroe
 
 ### 例
 
-<img src="./images/screen.jpeg" width="600" height="400">
+<img src="./images/screen.jpeg" width="600" height="400" style="border:solid">
 
 ---
 
@@ -138,12 +140,8 @@ WEB 開発のためのフレームワークはいろいろな種類があり、�
   - Flusk
 - PHP
   - Laravel
-- Java
-  - Spring
 - Ruby
   - Ruby on rails
-- TypeScript
-  - Nest.js
 
 ---
 
@@ -173,6 +171,8 @@ WEB 開発のためのフレームワークはいろいろな種類があり、�
 - WEB サイトを作る方法はたくさんある。
 - それぞれ違ったメリットがあり、サイトの目的や必要な機能によって使用する技術も変わってくると思う。
 - ググれば意外と情報が出てくる。ただ、ブラウザで開くタブの量がエグいことになる。
+
+---
 
 ## 今後の課題
 
