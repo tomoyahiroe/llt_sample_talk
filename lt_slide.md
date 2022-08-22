@@ -151,8 +151,8 @@ WEB 開発のためのフレームワークはいろいろな種類があり、�
   - Vue.js をより便利にした **Nuxt.js** がある。
 - **React.js**
   - React.js をより便利にした **Next.js** がある。
-- Gatsby.js
-  - **React.js** ベースのフレームワークらしい。(SSG 専門らしい??)
+- **Gatsby.js**
+  - React.js ベースのフレームワークらしい。(SSG 専門らしい??)
 
 ---
 
