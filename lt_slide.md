@@ -59,12 +59,15 @@ marp: true
 ---
 
 - 上のコードの例
-  ![](./download.gif)
+  <img src="./cat.png" width="900" style="border:solid">
+  <img src="./human.png" width="900" style="border:solid">
 
 ---
 
 ## HTML ファイルの自動生成(動的な WEB サイトの作成)
 
+では、ブログサイトなど日々サイトのページ数が増えていくような WEB サイトを作るとき、いちいち HTML ファイルを記述しなければいけないのでしょうか？
+ここで登場するのが、プログラミング言語を使った HTML ファイルの動的な生成です。使用できる言語はさまざまで、Python, Ruby, PHP, JavaScript(Node.js)などがあります。
 (PHP, PYTHON, Node.js, etc)
 
 ---
