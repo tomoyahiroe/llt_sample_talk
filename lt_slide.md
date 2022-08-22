@@ -136,23 +136,23 @@ written by tomoyahiroe
 WEB 開発のためのフレームワークはいろいろな種類があり、言語ごとに複数個有名なフレームワークがあります。ここではその一例を取り上げます。
 
 - Python
-  - Django
-  - Flusk
+  - **Django**
+  - **Flusk**
 - PHP
-  - Laravel
+  - **Laravel**
 - Ruby
-  - Ruby on rails
+  - **Ruby on rails**
 
 ---
 
 ### ナウイ JS フレームワーク(フロントエンドフレームワーク)
 
-- Vue.js
-  - Vue.js をより便利にした Nuxt.js がある。
-- React.js
-  - React.js をより便利にした Next.js がある。
+- **Vue.js**
+  - Vue.js をより便利にした **Nuxt.js** がある。
+- **React.js**
+  - React.js をより便利にした **Next.js** がある。
 - Gatsby.js
-  - React.js ベースのフレームワークらしい。(SSG 専門らしい??)
+  - **React.js** ベースのフレームワークらしい。(SSG 専門らしい??)
 
 ---
 
