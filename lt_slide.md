@@ -2,9 +2,36 @@
 marp: true
 paginate: true
 theme: default
-footer: https://twitter.com/lumos_program
-backgroundColor: #323537
-color: #E9E6DC
+---
+
+<style>
+section {
+    background-color: #030303;
+    color: #FFF;
+    padding-left: 150px; 
+    padding-right: 150px;
+}
+h1 {
+    color: #00ff00
+}
+h2 {
+    color: #00ff00
+
+}
+</style>
+
+# メモ
+
+- CMS/ headlessCMS
+- バックエンド/フロントエンド
+- データベース、サーバ
+- NodeJS の説明消す？
+- web フレームワークの説明を増やしたい
+- HTML/CSS の説明を飛ばす
+- アイコン画像挿入
+- 文章を体言止め箇条書きに直す
+- ビジュアルを増やす
+
 ---
 
 # Web サイトの作り方を調べてみた
@@ -34,73 +61,95 @@ written by tomoyahiroe
 - 横国経済 2 年、廣江友哉(ひろえ ともや)
 - 趣味はソフテニ、ベース
 - TypeScript を学習中。
+
   <img src="./images/intro_myself.JPG" width="400">
 
 ---
 
 ## 1. はじめに
 
-- このスライドは横浜国立大学公認サークル Lumos が、常盤祭で開催する Lumos Lightening Talks に先んじて LT の例として用意したものです。
-- 内容は初学者の方が爆速で JS フレームワークを触れるように前提知識を補強するものとなっています。
-- このスライドの内容には誤りが多々含まれているかもしれません。Lumos の見解ではなく、あくまで一個人の解釈だとご認識ください。ご指摘いただければ改善する予定です。ぜひ pull request ください。他人からプルリクくるのが僕の小さな夢の一つです。待ってます。
+### 目的
+
+- 常盤祭企画 Lumos Lightening talks の発表例を提示すること
+- モダンな WEB フレームワーク(特に NuxtJS)に入門するための知識を補強すること
+
+### 想定読者
+
+- HTML/CSS を書いたことがある人
+
+### 注意事項
+
+- 不備は Lumos ではなく tomoyahiroe に帰属
+- 親切な方からのご指摘に期待(TwitterID: @yudetamageta)
+- 本旨に影響を与えない知識はあえて雑に説明
 
 ---
 
 ## 2. 静的な WEB ページの作成
 
-- 全ての web サイトは、文章を記述する **HTML** 言語と、それを装飾する **CSS** 言語によってつくられます。
+- あらかじめ用意された HTML と CSS(と JS)を WEB サーバが配信し、私たちの PC 上のブラウザに表示する形式をとるサイト
 
-### 例
-
-<img src="./images/screen.jpeg" width="600" height="400" style="border:solid">
-
----
-
-### HTML のコード例
-
-<img src="./images/code.png" width="600" height="400">
+  - WEB サーバ ... 作成した HTML/CSS ファイルを配信してくれるもの
+  - ブラウザ ... ウェブサイトを表示してくれるアプリケーション(Google Chrome,Firefox, Microsoft Edge)
 
 ---
 
-### CSS のコード例
+## JavaScript による DOM 操作
 
-<img src="./images/css.png" width="600" height="400">
+- DOM ... HTML/CSS の要素のこと(正確には違う)
 
----
-
-### 例
-
-<img src="./images/screen.jpeg" width="600" height="400" style="border:solid">
+[DOM の説明記事]('https://eng -entrance.com/what-is-dom')
 
 ---
 
-## 3. リッチな WEB ページの作成
+### HTML/CSS 要素の操作(DOM 操作)でこんなことができる
 
-ただ、HTML と CSS のみで作成できる web サイトは動きが乏しく、見応えのあるサイトを作成するのは困難です。(CSS でやれないこともないですが面倒ですし、より技術力が必要になります。)
+- 昔の CSS はそんな機能豊富じゃなかったらしい
+  - ダークモード/ライトモードの切り替え
+  - 見出しのフェードイン
+  - 現在時刻の表示
+  - スライダーの表示
+  - ハンバーガーメニューの実装
+
+...
 
 ---
 
 ### JavaScript によるページ要素の操作
 
-そこで、**JavaScript** と呼ばれる言語を使用します。JavaScrpt は、HTML(とそれを装飾する CSS)の要素を操作することで、アニメーション豊かな、いわゆるリッチなサイトを作成することができます。
+- 具体的に JavaScript で書かれるコードの簡易的な例
 
-<img src="./images/js.png" width="600" height="400">
+```js
+// 架空JSのコード
+button.onclick = function () {
+  const defined_name = document.getElementsByClassName(
+    "class_name_of_html_element"
+  )[0];
+  defined_name.innerText = "Lumosに入会する";
+};
+```
 
 ---
 
-- 上のコードの例
-  <img src="./images/cat.png" width="900" style="border:solid">
-  <img src="./images/human.png" width="900" style="border:solid">
+## 3.5 静的サイトでできないこと
+
+- できないこと
+  - HTML ファイルの自動生成
+  - ユーザ毎に異なる画面を表示
+  - 機能毎にファイルを分けられない
+- 死ぬほどめんどくさいこと
+  - 画面遷移(リンクの移動)を伴わない画面表示の変更
+  - (上の例のように)HTML ファイルに JS で定義した変数の値を埋め込むこと(データバインド)
+- 不便なこと
+  - 繰り返し使用される表示(ヘッダー/フッター)を HTML ファイル全部に書かなければならない
+
+<p style="text-align:center"><strong>WEBフレームワークなら全部簡単にできる!</strong></p>
 
 ---
 
 ## 4. HTML ファイルの自動生成(動的な WEB サイトの作成)
 
 ---
-
-- では、ブログサイトなど日々サイトのページ数が増えていくような WEB サイトを作るとき、いちいち HTML ファイルを記述しなければいけないのでしょうか？
-- ここで登場するのが、プログラミング言語を使った **HTML ファイルの動的な生成**です。使用できる言語はさまざまで、Python, Ruby, PHP, JavaScript(Node.js)などがあります。
-- 本 LT では、特に **Node.js** と **JS フレームワーク**について取り扱います。
 
 ---
 
