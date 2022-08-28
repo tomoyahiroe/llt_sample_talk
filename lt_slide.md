@@ -24,20 +24,6 @@ pre {
 }
 </style>
 
-# メモ
-
-- CMS/ headlessCMS
-- バックエンド/フロントエンド
-- データベース、サーバ
-- NodeJS の説明消す？
-- web フレームワークの説明を増やしたい
-- HTML/CSS の説明を飛ばす
-- アイコン画像挿入
-- 文章を体言止め箇条書きに直す
-- ビジュアルを増やす
-
----
-
 # Web サイトの作り方を調べてみた
 
 LT 会のサンプル
@@ -53,9 +39,9 @@ written by tomoyahiroe
 3. JavaScript による DOM 操作
 4. 静的サイトでできないこと
 5. WEB フレームワークとは
-6. WEB 開発フレームワーク
-7. まとめ
-8. 今後の課題
+6. WEB フレームワークの種類
+7. Nuxt.js の例
+8. まとめ
 9. 参考文献
 
 ---
@@ -63,8 +49,9 @@ written by tomoyahiroe
 ## 0. 自己紹介
 
 - 横国経済 2 年、廣江友哉(ひろえ ともや)
-- 趣味はソフテニ、ベース
-- TypeScript を学習中。
+- 趣味はソフテニ、エレキベース
+- King Gnu, Millenium Parade, Ed Sheeran, Harry Styles が好き
+- Nuxt.js, Node.js, TypeScript を学習中
 
   <img src="./images/intro_myself.JPG" width="400">
 
@@ -232,13 +219,14 @@ WEB 開発のためのフレームワークはいろいろな種類があり、�
 
 ## 8. まとめ
 
-- WEB フレームワークは、HTML や CSS, 素の JS による DOM 操作ではできなかったり、難しかったりすることを比較的簡単に実装できるようにしてくれる。
-- 今回説明を省いたことが沢山あり、また機会があればまとめてみたい。
+- WEB フレームワークは、HTML や CSS, 素の JS による DOM 操作ではできなかったり、難しかったりすることを比較的簡単に実装できるようにしてくれる
+- 今回説明を省いたことが沢山あり、また機会があればまとめてみたい
+- スライドは MARP を使って作成
 
 ---
 
 ## 9. 参考文献
 
-- JavaScript の歴史(https://www.jetbrains.com/ja-jp/lp/javascript-25/)
-- Node.js について(https://qiita.com/non_cal/items/a8fee0b7ad96e67713eb)
-- WEB フレームワーク(https://kaopiz.com/ja-news-best-10-web-framework-2020/)
+- [JavaScript の歴史](https://www.jetbrains.com/ja-jp/lp/javascript-25/)
+- [Node.js について](https://qiita.com/non_cal/items/a8fee0b7ad96e67713eb)
+- [WEB フレームワーク](https://kaopiz.com/ja-news-best-10-web-framework-2020/)
